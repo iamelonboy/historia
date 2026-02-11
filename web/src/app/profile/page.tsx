@@ -11,6 +11,9 @@ import { StatusBadge, OutcomeBadge } from '@/components/StatusBadge';
 import { Footer } from '@/components/Footer';
 import { calculateUserScore, getScoreLabel } from '@/lib/scoring';
 
+// Force dynamic rendering for this page
+export const dynamic = 'force-dynamic';
+
 export default function ProfilePage() {
   const { connected, address } = useWallet();
   const searchParams = useSearchParams();
